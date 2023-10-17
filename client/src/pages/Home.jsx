@@ -48,8 +48,17 @@ export default function Home() {
   return (
     <div>
       {/* top */}
-      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto'>
-        <h1 className='text-blue-500 font-bold text-3xl '>TenderHub Home Page</h1>
+      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto bg-white m-5 rounded-md '>
+        <h1 className='text-blue-500 font-bold text-3xl flex justify-center '>TenderHub Home Page</h1>
+        <h2 className='font-bold flex justify-center text-teal-500'>Brief Description TenderHub</h2>
+        <p className='text-gray-500 font-sans '>
+        TenderHub Management Systems aim to improve the efficiency and transparency ,
+        of the tendering process, reducing administrative overhead, ensuring fair competition,
+         and helping organizations make informed procurement decisions. 
+         These systems are particularly valuable in industries
+          and sectors where large contracts and significant expenditures are involved.
+
+        </p>
         <Link
           to={'/search'}
           className='text-xs sm:text-sm text-blue-800 font-bold hover:underline'
