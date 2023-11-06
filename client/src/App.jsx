@@ -10,7 +10,7 @@ import CreateListing from "./pages/CreateListing";
 import UpdateListing from "./pages/UpdateListing";
 import Listing from "./pages/Listing";
 import Search from "./pages/Search";
-import { ForgotPassword } from "./pages/ForgotPassword";
+import ForgotPassword from "./pages/ForgotPassword";
 
 export default function App() {
   return (
