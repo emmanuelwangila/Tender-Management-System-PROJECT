@@ -36,6 +36,10 @@ app.use("/api/listing", listingRouter);
 
 app.use(express.static(path.join(__dirname, "/client/dist")));
 
+app.get("/test", (req, res) => {
+  res.send("Hello Manuel");
+});
+
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
 });
