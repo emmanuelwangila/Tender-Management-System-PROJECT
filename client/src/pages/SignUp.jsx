@@ -47,6 +47,7 @@ export default function SignUp() {
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
           type="text"
+          width={"50%"}
           placeholder="username"
           className="border p-3 rounded-lg"
           id="username"
