@@ -5,4 +5,6 @@
 body {
   background-color: bg-gray-100;
   background-image: url("background.jpg");
+  background-position: center;
+  background-size: cover;
 }
