@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: bg-gray-100;
+body {
+  background-color: bg-gray-100;
+  background-image: url("background.jpg");
 }
