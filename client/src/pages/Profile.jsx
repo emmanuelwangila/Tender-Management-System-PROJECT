@@ -224,7 +224,7 @@ export default function Profile() {
         </button>
         <Link
           className="bg-green-700 text-white p-3 rounded-lg w-3/4 mx-auto  text-center hover:opacity-95"
-          to={"/create-listing"}
+          to={"/create-tender"}
         >
           Create Tender
         </Link>
