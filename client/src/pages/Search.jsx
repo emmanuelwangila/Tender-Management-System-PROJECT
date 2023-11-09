@@ -235,7 +235,7 @@ export default function Search() {
         </h1>
         <div className="p-7 flex flex-wrap gap-4">
           {!loading && listings.length === 0 && (
-            <p className="text-xl text-slate-700">No listing found!</p>
+            <p className="text-xl text-slate-700">No Tender found!</p>
           )}
           {loading && (
             <p className="text-xl text-slate-700 text-center w-full">
