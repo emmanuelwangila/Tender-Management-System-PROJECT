@@ -188,7 +188,7 @@ export default function Search() {
             </div>
           </div>
           <div className="flex gap-2 flex-wrap items-center">
-            <label className="font-semibold">Amenities:</label>
+            <label className="font-semibold">Categories:</label>
             <div className="flex gap-2">
               <input
                 type="checkbox"
@@ -197,7 +197,7 @@ export default function Search() {
                 onChange={handleChange}
                 checked={sidebardata.parking}
               />
-              <span>Parking</span>
+              <span>Short-Term</span>
             </div>
             <div className="flex gap-2">
               <input
@@ -207,7 +207,7 @@ export default function Search() {
                 onChange={handleChange}
                 checked={sidebardata.furnished}
               />
-              <span>Furnished</span>
+              <span>Long-Term</span>
             </div>
           </div>
           <div className="flex items-center gap-2">
