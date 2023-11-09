@@ -95,8 +95,8 @@ export default function Home() {
         {offerListings && offerListings.length > 0 && (
           <div className="">
             <div className="my-3">
-              <h2 className="text-2xl font-semibold text-slate-600">
-                Recent offers
+              <h2 className="text-2xl font-semibold text-blue-500">
+                Recent Tenders
               </h2>
               <Link
                 className="text-sm text-blue-800 hover:underline"
@@ -115,8 +115,8 @@ export default function Home() {
         {rentListings && rentListings.length > 0 && (
           <div className="">
             <div className="my-3">
-              <h2 className="text-2xl font-semibold text-slate-600">
-                Recent places for rent
+              <h2 className="text-2xl font-semibold text-blue-500">
+                Recent Tenders for Construction
               </h2>
               <Link
                 className="text-sm text-blue-800 hover:underline"
@@ -135,8 +135,8 @@ export default function Home() {
         {saleListings && saleListings.length > 0 && (
           <div className="">
             <div className="my-3">
-              <h2 className="text-2xl font-semibold text-slate-600">
-                Recent places for sale
+              <h2 className="text-2xl font-semibold text-blue-500">
+                Recent Tenders for Supply
               </h2>
               <Link
                 className="text-sm text-blue-800 hover:underline"
