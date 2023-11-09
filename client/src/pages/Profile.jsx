@@ -229,16 +229,20 @@ export default function Profile() {
           Create Tender
         </Link>
       </form>
-      <div className="flex justify-between mt-5">
-        <span
-          onClick={handleDeleteUser}
-          className="text-red-700 cursor-pointer"
-        >
-          Delete account
-        </span>
-        <span onClick={handleSignOut} className="text-red-700 cursor-pointer">
-          Sign out
-        </span>
+      <div className="flex justify-between mt-5 ">
+        <button className="rounded-md bg-red-300 m-2 p-3 ">
+          <span
+            onClick={handleDeleteUser}
+            className="text-red-700 cursor-pointer"
+          >
+            Delete account
+          </span>
+        </button>
+        <button className="rounded-md m-2 p-3 bg-red-300">
+          <span onClick={handleSignOut} className="text-red-700 cursor-pointer">
+            Sign out
+          </span>
+        </button>
       </div>
 
       <p className="text-red-700 mt-5">{error ? error : ""}</p>
