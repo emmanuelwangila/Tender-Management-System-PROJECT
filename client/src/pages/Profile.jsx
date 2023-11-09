@@ -246,7 +246,7 @@ export default function Profile() {
         {updateSuccess ? "User is updated successfully!" : ""}
       </p>
       <button onClick={handleShowListings} className="text-green-700 w-full">
-        Show Listings
+        Show Tenders
       </button>
       <p className="text-red-700 mt-5">
         {showListingsError ? "Error showing listings" : ""}
@@ -255,7 +255,7 @@ export default function Profile() {
       {userListings && userListings.length > 0 && (
         <div className="flex flex-col gap-4">
           <h1 className="text-center mt-7 text-2xl font-semibold">
-            Your Listings
+            Your Tenders
           </h1>
           {userListings.map((listing) => (
             <div
