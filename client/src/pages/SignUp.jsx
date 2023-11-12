@@ -40,7 +40,7 @@ export default function SignUp() {
     }
   };
   return (
-    <div className="bg-gray-200 m-5 rounded-md  p-3 max-w-lg mx-auto">
+    <div className="bg-gray-300 m-5 rounded-md  p-3 max-w-lg mx-auto">
       <h1 className="text-3xl text-blue-500 text-center font-semibold my-7">
         Sign Up
       </h1>

@@ -50,7 +50,7 @@ export default function Home() {
       {/* top */}
       <div className="flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto bg-gray-200 m-5 rounded-md ">
         <h1 className="text-blue-500 font-bold text-3xl flex justify-center ">
-          TenderHub Home Page
+          TenderHub
         </h1>
         <h2 className="font-bold flex justify-center text-teal-500">
           Brief Description TenderHub
