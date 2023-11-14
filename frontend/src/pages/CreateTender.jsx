@@ -253,7 +253,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 value={formData.bedrooms}
               />
-              <p>Beds</p>
+              <p className="text-blue-500 font-bold">Directors</p>
             </div>
             <div className="flex items-center gap-2">
               <input
@@ -266,7 +266,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 value={formData.bathrooms}
               />
-              <p>Baths</p>
+              <p className="text-blue-500 font-bold"> Contarctors</p>
             </div>
             <div className="flex items-center gap-2">
               <input
