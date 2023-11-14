@@ -198,7 +198,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.type === "sale"}
               />
-              <span>Sell</span>
+              <span className="text-blue-500 ">Sell</span>
             </div>
             <div className="flex gap-2">
               <input
@@ -208,7 +208,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.type === "rent"}
               />
-              <span>Rent</span>
+              <span className="text-blue-500 ">Rent</span>
             </div>
             <div className="flex gap-2">
               <input
@@ -218,7 +218,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.parking}
               />
-              <span>Parking spot</span>
+              <span className="text-blue-500 ">Parking spot</span>
             </div>
             <div className="flex gap-2">
               <input
@@ -228,7 +228,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.furnished}
               />
-              <span>Furnished</span>
+              <span className="text-blue-500">Furnished</span>
             </div>
             <div className="flex gap-2">
               <input
@@ -238,7 +238,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.offer}
               />
-              <span>Offer</span>
+              <span className="text-blue-500 ">Offer</span>
             </div>
           </div>
           <div className="flex flex-wrap gap-6">
@@ -280,7 +280,7 @@ export default function CreateListing() {
                 value={formData.regularPrice}
               />
               <div className="flex flex-col items-center">
-                <p>Regular price</p>
+                <p className="text-blue-500 font-bold ">Regular price</p>
                 {formData.type === "rent" && (
                   <span className="text-xs">($ / month)</span>
                 )}
