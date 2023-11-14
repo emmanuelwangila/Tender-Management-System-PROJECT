@@ -154,7 +154,7 @@ export default function CreateListing() {
     }
   };
   return (
-    <main className="p-3 max-w-4xl mx-auto">
+    <main className=" max-w-4xl mx-auto bg-gray-200 m-5 p-5 rounded-md ">
       <h1 className="text-3xl bold text-blue-500 text-center my-7">
         Create a Tender
       </h1>
@@ -194,7 +194,7 @@ export default function CreateListing() {
               <input
                 type="checkbox"
                 id="sale"
-                className="w-5"
+                className="w-5 bg-gray-200"
                 onChange={handleChange}
                 checked={formData.type === "sale"}
               />
@@ -359,9 +359,9 @@ export default function CreateListing() {
             ))}
           <button
             disabled={loading || uploading}
-            className="p-3 bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 disabled:opacity-80"
+            className="p-3 bg-blue-500 text-white rounded-lg uppercase hover:opacity-95 disabled:opacity-80"
           >
-            {loading ? "Creating..." : "Create listing"}
+            {loading ? "Creating..." : "Create Tender"}
           </button>
           {error && <p className="text-red-700 text-sm">{error}</p>}
         </div>
