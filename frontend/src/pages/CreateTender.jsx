@@ -154,7 +154,7 @@ export default function CreateListing() {
     }
   };
   return (
-    <main className=" max-w-4xl mx-auto bg-gray-200 m-5 p-5 rounded-md ">
+    <main className=" max-w-4xl mx-auto bg-white m-5 p-5 rounded-md ">
       <h1 className="text-3xl bold text-blue-500 text-center my-7">
         Create a Tender
       </h1>
@@ -198,7 +198,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.type === "sale"}
               />
-              <span className="text-blue-500 ">Sell</span>
+              <span className="text-blue-500 ">Suppyl</span>
             </div>
             <div className="flex gap-2">
               <input
@@ -208,7 +208,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.type === "rent"}
               />
-              <span className="text-blue-500 ">Rent</span>
+              <span className="text-blue-500 ">Construction</span>
             </div>
             <div className="flex gap-2">
               <input
@@ -218,7 +218,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.parking}
               />
-              <span className="text-blue-500 ">Parking spot</span>
+              <span className="text-blue-500 ">tender- time</span>
             </div>
             <div className="flex gap-2">
               <input
@@ -228,12 +228,13 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.furnished}
               />
-              <span className="text-blue-500">Furnished</span>
+              <span className="text-blue-500">Binded</span>
             </div>
             <div className="flex gap-2">
               <input
                 type="checkbox"
                 id="offer"
+                s
                 className="w-5"
                 onChange={handleChange}
                 checked={formData.offer}
