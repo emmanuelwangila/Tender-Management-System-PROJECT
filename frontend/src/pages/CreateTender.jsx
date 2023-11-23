@@ -360,7 +360,7 @@ export default function CreateListing() {
             ))}
           <button
             disabled={loading || uploading}
-            className="p-3 bg-blue-500 text-white rounded-lg uppercase hover:opacity-95 disabled:opacity-80"
+            className="p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700"
           >
             {loading ? "Creating..." : "Create Tender"}
           </button>
