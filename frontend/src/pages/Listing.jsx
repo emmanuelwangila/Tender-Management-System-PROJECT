@@ -88,16 +88,16 @@ export default function Listing() {
               Link copied!
             </p>
           )}
-          <div className="flex flex-col max-w-4xl mx-auto p-3 my-7 gap-4">
-            <p className="text-2xl font-semibold">
+          <div className="flex bg-white rounded-md  flex-col max-w-4xl mx-auto p-3 my-7 gap-4">
+            <p className="text-2xl font-semibold text-teal-600 ">
               {listing.name} - ${" "}
               {listing.offer
                 ? listing.discountPrice.toLocaleString("en-US")
                 : listing.regularPrice.toLocaleString("en-US")}
               {listing.type === "rent" && " / month"}
             </p>
-            <p className="flex items-center mt-6 gap-2 text-slate-600  text-sm">
-              <FaMapMarkerAlt className="text-green-700" />
+            <p className="flex items-center mt-6 gap-2 text-gray-500 font-bold   text-md">
+              <FaMapMarkerAlt className="text-green-700 w-8 h-8 " />
               {listing.address}
             </p>
             <div className="flex gap-4">
@@ -139,7 +139,7 @@ export default function Listing() {
             {currentUser && listing.userRef !== currentUser._id && !contact && (
               <button
                 onClick={() => setContact(true)}
-                className="bg-blue-500 text-white rounded-lg uppercase hover:opacity-95 p-3"
+                className="bg-blue-500 text-white rounded-md  hover:opacity-95 p-3"
               >
                 Bid Tender
               </button>
