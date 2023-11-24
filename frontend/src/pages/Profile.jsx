@@ -161,7 +161,7 @@ export default function Profile() {
     }
   };
   return (
-    <div className="p-3 max-w-lg mx-auto bg-gray-300 m-5  mb-5  rounded-md ">
+    <div className="p-3 max-w-lg mx-auto bg-white border-2  border-gray-300 m-5  mb-5  rounded-md ">
       <h1 className=" text-2xl font-mono text-blue-500 text-center my-7">
         {" "}
         User Profile
