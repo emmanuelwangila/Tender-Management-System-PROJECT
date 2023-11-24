@@ -162,7 +162,7 @@ export default function Profile() {
   };
   return (
     <div className="p-3 max-w-lg mx-auto bg-gray-300 m-5  mb-5  rounded-md ">
-      <h1 className=" text-2xl  font-bold text-blue-500 text-center my-7">
+      <h1 className=" text-2xl font-mono text-blue-500 text-center my-7">
         {" "}
         User Profile
       </h1>
@@ -218,9 +218,9 @@ export default function Profile() {
         />
         <button
           disabled={loading}
-          className="bg-blue-500 text-white rounded-lg p-3 w-3/4 mx-auto  hover:opacity-95 disabled:opacity-80"
+          className="bg-blue-500 border  text-white rounded-lg p-3 w-3/4 mx-auto  hover:opacity-95 disabled:opacity-80"
         >
-          {loading ? "Loading..." : "Update"}
+          {loading ? "Loading..." : "Update profile"}
         </button>
         <Link
           className="bg-green-700 text-white p-3 rounded-lg w-3/4 mx-auto  text-center hover:opacity-95"
@@ -230,17 +230,17 @@ export default function Profile() {
         </Link>
       </form>
       <div className="flex justify-between mt-5 ">
-        <button className="rounded-md bg-red-300 m-2 p-3 ">
+        <button className="rounded-md bg-red-500 m-2 p-3 ">
           <span
             onClick={handleDeleteUser}
-            className="text-red-700 cursor-pointer"
+            className="text-white cursor-pointer"
           >
             Delete account
           </span>
         </button>
-        <button className="rounded-md m-2 p-3 bg-red-300">
-          <span onClick={handleSignOut} className="text-red-700 cursor-pointer">
-            Sign out
+        <button className="rounded-md m-2 p-3 bg-red-500">
+          <span onClick={handleSignOut} className="text-white cursor-pointer">
+            Log Out
           </span>
         </button>
       </div>
