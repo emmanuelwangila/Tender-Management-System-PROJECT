@@ -51,7 +51,7 @@ export default function Home() {
       {/* top */}
 
       <div className="flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto bg-white  m-5 rounded-md ">
-        <h1 className="text-blue-500 font-bold text-3xl flex justify-center ">
+        <h1 className="text-blue-700 font-bold font-pro text-3xl flex justify-center ">
           TenderHub
         </h1>
         <TypeAnimation
