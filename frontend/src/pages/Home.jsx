@@ -5,6 +5,7 @@ import { Navigation } from "swiper/modules";
 import { TypeAnimation } from "react-type-animation";
 import SwiperCore from "swiper";
 import "swiper/css/bundle";
+import Image from "../images/tender.png";
 import ListingItem from "../components/ListingItem";
 
 export default function Home() {
@@ -50,7 +51,11 @@ export default function Home() {
     <div>
       {/* top */}
 
-      <div className="flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto bg-white  m-5 rounded-md ">
+      <div className="flex flex-col gap-4 p-15 px-3 max-w-6xl mx-auto bg-white  m-5 rounded-md ">
+        <img
+          src={Image}
+          className="w-[350px] flex justify-center rounded-full mx-auto"
+        />
         <h1 className="text-blue-700 font-bold font-pro text-3xl flex justify-center ">
           TenderHub
         </h1>
