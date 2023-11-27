@@ -7,6 +7,7 @@ import {
   signInFailure,
 } from "../redux/user/userSlice";
 import OAuth from "../components/OAuth";
+import { Icon } from "@iconify/react";
 
 export default function SignIn() {
   const [formData, setFormData] = useState({});
@@ -19,6 +20,18 @@ export default function SignIn() {
       [e.target.id]: e.target.value,
     });
   };
+
+  let eyeicon = document.getElementById("eyeicon");
+  let password = document.getElementById("password");
+
+  eyeicon.onclick = function () {
+    if (password.type == "password") {
+      password.type = "text";
+    } else {
+      password.type = "password";
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -43,8 +56,8 @@ export default function SignIn() {
     }
   };
   return (
-    <div className="p-3 max-w-lg mx-auto bg-gray-300 rounded-md  m-5 ">
-      <h1 className="text-3xl text-center font-semibold my-7 text-blue-500">
+    <div className="p-3 max-w-lg mx-auto bg-white  border border-gray-300 rounded-md  m-5 ">
+      <h1 className="text-3xl text-center font-semibold font-mono my-7 text-blue-500">
         Sign In
       </h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -55,13 +68,21 @@ export default function SignIn() {
           id="email"
           onChange={handleChange}
         />
-        <input
-          type="password"
-          placeholder="password"
-          className="border p-3 rounded-lg w-3/4 mx-auto "
-          id="password"
-          onChange={handleChange}
-        />
+        <div className="flex justify-evenly m-3 gap-2 ">
+          <input
+            type="password"
+            placeholder="password"
+            className="border p-3 rounded-lg w-3/4 mx-auto "
+            id="password"
+            onChange={handleChange}
+          />
+          <Icon
+            icon="basil:eye-closed-outline"
+            color="gray"
+            className="m-2 "
+            id="eyeicon"
+          />
+        </div>
 
         <button
           disabled={loading}
