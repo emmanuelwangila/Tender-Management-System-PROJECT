@@ -24,7 +24,14 @@ export default function SignIn() {
   let eyeicon = document.getElementById("eyeicon");
   let password = document.getElementById("password");
 
-  eyeicon.onclick = function () {
+  // eyeicon.onclick = function () {
+  //   if (password.type == "password") {
+  //     password.type = "text";
+  //   } else {
+  //     password.type = "password";
+  //   }
+  // };
+  const passwordVisibility = () => {
     if (password.type == "password") {
       password.type = "text";
     } else {
@@ -77,9 +84,10 @@ export default function SignIn() {
             onChange={handleChange}
           />
           <Icon
+            onClick={passwordVisibility}
             icon="basil:eye-closed-outline"
             color="gray"
-            className="m-2 "
+            className="m-2 cursor-pointer "
             id="eyeicon"
           />
         </div>
