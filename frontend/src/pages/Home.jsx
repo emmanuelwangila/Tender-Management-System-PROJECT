@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { TypeAnimation } from "react-type-animation";
 import SwiperCore from "swiper";
 import "swiper/css/bundle";
 import ListingItem from "../components/ListingItem";
@@ -48,10 +49,28 @@ export default function Home() {
   return (
     <div>
       {/* top */}
+
       <div className="flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto bg-white  m-5 rounded-md ">
         <h1 className="text-blue-500 font-bold text-3xl flex justify-center ">
           TenderHub
         </h1>
+        <TypeAnimation
+          sequence={[
+            // Same substring at the start will only be typed out once, initially
+            "Easy Tendering Process",
+            1000, // wait 1s before replacing "Mice" with "Hamsters"
+            "Efficient Bid Submission on Time by email",
+            1000,
+            "Effective Tendering Process",
+            1000,
+            "TenderHub the place to be",
+            1000,
+          ]}
+          wrapper="span"
+          speed={60}
+          style={{ fontSize: "2em", display: "inline-block ", color: "blue" }}
+          repeat={Infinity}
+        />
         <h2 className="font-bold flex justify-center text-teal-500">
           Brief Description TenderHub
         </h2>
