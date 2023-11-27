@@ -76,7 +76,7 @@ export default function Home() {
           style={{ fontSize: "2em", display: "inline-block ", color: "blue" }}
           repeat={Infinity}
         />
-        <h2 className="font-bold flex justify-center text-teal-500">
+        <h2 className="font-bold flex justify-center text-teal-800 mt-5">
           Brief Description TenderHub
         </h2>
         <p className="text-gray-500 font-sans ">
