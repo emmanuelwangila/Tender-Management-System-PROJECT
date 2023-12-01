@@ -2,31 +2,30 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Contact({ listing }) {
-  const [landlord, setLandlord] = useState(null);
+  const [tender, setTender] = useState(null);
   const [message, setMessage] = useState("");
   const onChange = (e) => {
     setMessage(e.target.value);
   };
 
   useEffect(() => {
-    const fetchLandlord = async () => {
+    const fetchTender = async () => {
       try {
         const res = await fetch(`/api/user/${listing.userRef}`);
         const data = await res.json();
-        setLandlord(data);
+        setTender(data);
       } catch (error) {
         console.log(error);
       }
     };
-    fetchLandlord();
+    fetchTender();
   }, [listing.userRef]);
   return (
     <>
-      {landlord && (
+      {tender && (
         <div className="flex flex-col gap-2">
           <p>
-            Contact <span className="font-semibold">{landlord.username}</span>{" "}
-            for{" "}
+            Contact <span className="font-semibold">{tender.username}</span> for{" "}
             <span className="font-semibold">{listing.name.toLowerCase()}</span>
           </p>
           <textarea
@@ -40,10 +39,10 @@ export default function Contact({ listing }) {
           ></textarea>
 
           <Link
-            to={`mailto:${landlord.email}?subject=Regarding ${listing.name}&body=${message}`}
-            className="bg-blue-500 text-white text-center p-3 uppercase rounded-lg hover:opacity-95"
+            to={`mailto:${tender.email}?subject=Regarding ${listing.name} Tender &body=${message}`}
+            className="bg-blue-500 text-white text-center p-3  rounded-lg hover:opacity-95"
           >
-            Send Message
+            Send Mail
           </Link>
         </div>
       )}
