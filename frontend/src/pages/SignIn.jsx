@@ -75,7 +75,7 @@ export default function SignIn() {
           id="email"
           onChange={handleChange}
         />
-        <div className="flex justify-evenly m-3 gap-2 ">
+        <div className="flex cursor-pointer ">
           <input
             type="password"
             placeholder="password"
