@@ -51,7 +51,7 @@ export default function Home() {
     <div>
       {/* top */}
 
-      <div className="flex flex-col gap-4 p-15 px-3 max-w-6xl mx-auto bg-white  m-5 rounded-md ">
+      <div className="flex bg-slate-100s flex-col gap-4 p-15 px-3 w-full  mx-auto  m-5 rounded-md ">
         <img
           src={Image}
           className="w-[350px] flex justify-center rounded-full mx-auto"
