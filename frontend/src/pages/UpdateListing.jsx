@@ -234,7 +234,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.parking}
               />
-              <span className="text-blue-500">Parking spot</span>
+              <span className="text-blue-500">tender-time</span>
             </div>
             <div className="flex gap-2">
               <input
@@ -244,7 +244,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.furnished}
               />
-              <span className="text-blue-500">Furnished</span>
+              <span className="text-blue-500">Binded</span>
             </div>
             <div className="flex gap-2">
               <input
