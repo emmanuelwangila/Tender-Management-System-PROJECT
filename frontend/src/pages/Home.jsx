@@ -51,7 +51,7 @@ export default function Home() {
     <div>
       {/* top */}
 
-      <div className="flex bg-slate-100 flex-col gap-4 p-15 px-3 w-full  mx-auto   rounded-md ">
+      <div className="flex bg-white   flex-col gap-4  px-3   mx-auto   rounded-md ">
         <img
           src={Image}
           className="w-[350px]  m-2 flex justify-center rounded-full mx-auto"
@@ -63,12 +63,14 @@ export default function Home() {
           sequence={[
             // Same substring at the start will only be typed out once, initially
             "Easy Tendering Process",
-            1000, // wait 1s before replacing "Mice" with "Hamsters"
+            500, // wait 1s before replacing "Mice" with "Hamsters"
             "Efficient Bid Submission on Time by email",
-            1000,
+            500,
             "Effective Tendering Process",
             1000,
-            "TenderHub the place to be",
+            "TenderHub Management System",
+            1000,
+            "Easy Creation Updating and Deleting Tenders",
             1000,
           ]}
           wrapper="span"
@@ -97,9 +99,9 @@ export default function Home() {
 
       {/* swiper */}
       <Swiper navigation>
-        {offerListings &&
-          offerListings.length > 0 &&
-          offerListings.map((listing) => (
+        {rentListings &&
+          rentListings.length > 0 &&
+          rentListings.map((listing) => (
             <SwiperSlide>
               <div
                 style={{
