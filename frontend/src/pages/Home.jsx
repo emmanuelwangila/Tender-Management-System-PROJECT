@@ -140,7 +140,7 @@ export default function Home() {
           <div className="">
             <div className="my-3">
               <h2 className="text-2xl font-semibold text-blue-500">
-                Recent Tenders for Construction
+                Recent Tenders for Construction [{rentListings.length}]
               </h2>
               <Link
                 className="text-sm text-blue-800 hover:underline"
@@ -160,7 +160,7 @@ export default function Home() {
           <div className="">
             <div className="my-3">
               <h2 className="text-2xl font-semibold text-blue-500">
-                Recent Tenders for Supply
+                Recent Tenders for Supply [{saleListings.length}]
               </h2>
               <Link
                 className="text-sm text-blue-800 hover:underline"
