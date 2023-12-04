@@ -68,12 +68,18 @@ export default function Home() {
             1000,
             "Effective Tendering Process",
             1000,
-            "TenderHub the place to be",
+            "TenderHub Management System",
+            1000,
+            "Easy Creation, Updation of Tenders effectively and their Management",
             1000,
           ]}
           wrapper="span"
           speed={60}
-          style={{ fontSize: "2em", display: "inline-block ", color: "blue" }}
+          style={{
+            fontSize: "2em",
+            display: "inline-block ",
+            color: "gray-900",
+          }}
           repeat={Infinity}
         />
         <h2 className="font-bold flex justify-center text-teal-800 mt-5">
