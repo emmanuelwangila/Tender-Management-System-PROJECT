@@ -90,11 +90,11 @@ export default function Listing() {
           )}
           <div className="flex bg-white rounded-md  flex-col max-w-4xl mx-auto p-3 my-7 gap-4">
             <p className="text-2xl font-semibold text-teal-600 ">
-              {listing.name} - ${" "}
+              {listing.name} - KSH{" "}
               {listing.offer
                 ? listing.discountPrice.toLocaleString("en-US")
                 : listing.regularPrice.toLocaleString("en-US")}
-              {listing.type === "rent" && " / month"}
+              {listing.type === "rent" && " "}
             </p>
             <p className="flex items-center mt-6 gap-2 text-blue-500    text-md">
               <FaMapMarkerAlt className="text-green-700 w-8 h-8 " />

@@ -253,7 +253,7 @@ export default function Profile() {
         Show Tenders
       </button>
       <p className="text-red-700 mt-5">
-        {showListingsError ? "Error showing listings" : ""}
+        {showListingsError ? "Error showing tenders" : ""}
       </p>
 
       {userListings && userListings.length > 0 && (
@@ -283,12 +283,12 @@ export default function Profile() {
               <div className="flex flex-col item-center">
                 <button
                   onClick={() => handleListingDelete(listing._id)}
-                  className="text-red-700 uppercase bg-red-300  rounded-md m-2 p-2  "
+                  className="text-white uppercase bg-red-500  rounded-md m-2 p-2  "
                 >
                   Delete
                 </button>
                 <Link to={`/update-listing/${listing._id}`}>
-                  <button className="text-green-700 uppercase bg-green-300 rounded-md m-2 p-3 ">
+                  <button className="text-white uppercase bg-green-500 rounded-md m-2 p-3 ">
                     Edit
                   </button>
                 </Link>
