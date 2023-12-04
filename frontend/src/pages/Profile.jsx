@@ -253,7 +253,7 @@ export default function Profile() {
         Show Tenders
       </button>
       <p className="text-red-700 mt-5">
-        {showListingsError ? "Error showing listings" : ""}
+        {showListingsError ? "Error showing tenders" : ""}
       </p>
 
       {userListings && userListings.length > 0 && (
