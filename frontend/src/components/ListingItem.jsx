@@ -26,6 +26,9 @@ export default function ListingItem({ listing }) {
           <p className="text-sm text-gray-600 line-clamp-2">
             {listing.description}
           </p>
+          <p className="text-sm text-red-500 line-clamp-2">
+            {listing.regularPrice} KSH
+          </p>
           {/* <p className="text-blue-500 mt-2 font-semibold ">
             $
             {listing.offer
