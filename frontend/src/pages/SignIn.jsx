@@ -75,7 +75,7 @@ export default function SignIn() {
           id="email"
           onChange={handleChange}
         />
-        <div className="flex justify-evenly m-3 gap-2 ">
+        <div className="flex justify-evenly  gap-2 ">
           <input
             type="password"
             placeholder="password"
@@ -83,13 +83,13 @@ export default function SignIn() {
             id="password"
             onChange={handleChange}
           />
-          <Icon
+          {/* <Icon
             onClick={passwordVisibility}
             icon="basil:eye-closed-outline"
             color="gray"
             className="m-2 cursor-pointer "
             id="eyeicon"
-          />
+          /> */}
         </div>
 
         <button
@@ -106,11 +106,11 @@ export default function SignIn() {
           <span className="text-blue-700">Sign up</span>
         </Link>
       </div>
-      <div className="flex gap-2 mt-5">
+      {/* <div className="flex gap-2 mt-5">
         <Link to={"/forgotpassword"}>
           <span className="text-blue-700">Forgot password? </span>
         </Link>
-      </div>
+      </div> */}
       {error && <p className="text-red-500 mt-5">{error}</p>}
     </div>
   );
