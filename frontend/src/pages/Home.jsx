@@ -126,7 +126,7 @@ export default function Home() {
           <div className="">
             <div className="my-3">
               <h2 className="text-2xl font-semibold text-blue-500">
-                Recent Tenders
+                Recent Tenders with Offers [{offerListings.length}]
               </h2>
               <Link
                 className="text-sm text-blue-800 hover:underline"
