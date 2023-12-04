@@ -56,7 +56,7 @@ export default function Home() {
           src={Image}
           className="w-[350px]  m-2 flex justify-center rounded-full mx-auto"
         />
-        <h1 className="text-gray-500 font-bold font-pro text-3xl flex justify-center ">
+        <h1 className="text-gray-900 uppercase font-bold font-pro text-3xl flex justify-center ">
           TenderHub
         </h1>
         <TypeAnimation
