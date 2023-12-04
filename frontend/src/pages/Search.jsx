@@ -230,8 +230,8 @@ export default function Search() {
         </form>
       </div>
       <div className="flex-1">
-        <h1 className="text-3xl font-semibold border-b p-3 text-blue-500  mt-5">
-          Tender Results
+        <h1 className="text-2xl font-bold flex justify-center border-b p-3 text-teal-500  mt-5">
+          All Tenders
         </h1>
         <div className="p-7 flex flex-wrap gap-4">
           {!loading && listings.length === 0 && (
