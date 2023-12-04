@@ -97,9 +97,9 @@ export default function Home() {
 
       {/* swiper */}
       <Swiper navigation>
-        {offerListings &&
-          offerListings.length > 0 &&
-          offerListings.map((listing) => (
+        {rentListings &&
+          rentListings.length > 0 &&
+          rentListings.map((listing) => (
             <SwiperSlide>
               <div
                 style={{
