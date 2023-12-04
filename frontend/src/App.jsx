@@ -10,6 +10,9 @@ import CreateTender from "./pages/CreateTender";
 import UpdateListing from "./pages/UpdateListing";
 import Listing from "./pages/Listing";
 import Search from "./pages/Search";
+import Dashboard from "./pages/Dashboard";
+import Tenderhub from "./pages/Tenderhub";
+
 // import ForgotPassword from "./pages/ForgotPassword";
 
 export default function App() {
@@ -17,7 +20,7 @@ export default function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Tenderhub />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/about" element={<About />} />
@@ -33,6 +36,8 @@ export default function App() {
             path="/update-listing/:listingId"
             element={<UpdateListing />}
           />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/home" element={<Home />} />
         </Route>
       </Routes>
     </BrowserRouter>

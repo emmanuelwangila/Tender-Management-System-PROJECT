@@ -46,16 +46,16 @@ export default function Header() {
           </button>
         </form>
         <ul className="flex gap-4">
-          <Link to="/">
+          <Link to="/home">
             <li className="hidden sm:inline text-teal-500 hover:underline cursor-pointer">
               Home
             </li>
           </Link>
-          <Link to="/about">
+          {/* <Link to="/about">
             <li className="hidden sm:inline text-teal-500 hover:underline  cursor-pointer">
               About
             </li>
-          </Link>
+          </Link> */}
           <Link to="/profile">
             {currentUser ? (
               <img
