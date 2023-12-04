@@ -214,7 +214,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.type === "sale"}
               />
-              <span className="text-blue-500">Sell</span>
+              <span className="text-blue-500">Supply</span>
             </div>
             <div className="flex gap-2">
               <input
@@ -224,7 +224,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.type === "rent"}
               />
-              <span className="text-blue-500">Rent</span>
+              <span className="text-blue-500">Construction</span>
             </div>
             <div className="flex gap-2">
               <input
