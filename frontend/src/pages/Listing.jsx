@@ -54,7 +54,9 @@ export default function Listing() {
     <main>
       {loading && <p className="text-center my-7 text-2xl">Loading...</p>}
       {error && (
-        <p className="text-center my-7 text-2xl">Something went wrong!</p>
+        <p className="text-center text-red-500 my-7 text-2xl">
+          Something went wrong!
+        </p>
       )}
       {listing && !loading && !error && (
         <div>
@@ -62,7 +64,7 @@ export default function Listing() {
             {listing.imageUrls.map((url) => (
               <SwiperSlide key={url}>
                 <div
-                  className="h-[550px]"
+                  className="h-[450px]"
                   style={{
                     background: `url(${url}) center no-repeat`,
                     backgroundSize: "cover",
