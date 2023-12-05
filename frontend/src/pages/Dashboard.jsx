@@ -7,6 +7,7 @@ import SwiperCore from "swiper";
 import "swiper/css/bundle";
 
 import ListingItem from "../components/ListingItem";
+import Listing from "./Listing";
 
 export default function Home() {
   const [offerListings, setOfferListings] = useState([]);
@@ -53,13 +54,14 @@ export default function Home() {
       <div className="flex bg-slate-100 flex-col gap-4 p-15 px-3 w-full mx-auto rounded-md ">
         <Link
           to={"/search"}
-          className="text-xs sm:text-sm text-blue-800 font-bold hover:underline"
+          className="text-xs sm:text-sm text-blue-900 font-bold hover:underline"
         >
           Let's get started ...Tender
         </Link>
-        <h1 className="uppercase text-blue-700 text-2xl flex justify-center">
+        <h1 className="uppercase text-blue-900 text-3xl flex justify-center">
           ADMIN DASHBOARD
         </h1>
+        {/* <h2 className="text-blue-500 font-bold "> Manu [{Listing.length}]</h2> */}
       </div>
 
       {/* table */}
