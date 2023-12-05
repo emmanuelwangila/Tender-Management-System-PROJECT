@@ -258,8 +258,8 @@ export default function Profile() {
 
       {userListings && userListings.length > 0 && (
         <div className="flex flex-col gap-4">
-          <h1 className="text-center mt-7 text-2xl font-semibold">
-            Your Tenders
+          <h1 className="text-center mt-7 text-2xl text-blue-500 font-semibold">
+            Your Tenders [{userListings.length}]
           </h1>
           {userListings.map((listing) => (
             <div

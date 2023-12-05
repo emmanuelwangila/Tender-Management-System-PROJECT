@@ -283,7 +283,7 @@ export default function CreateListing() {
               <div className="flex flex-col items-center">
                 <p className="text-blue-500 font-bold ">Regular price</p>
                 {formData.type === "rent" && (
-                  <span className="text-xs">(KSH )</span>
+                  <span className="text-blue-500 font-bold">(KSH )</span>
                 )}
               </div>
             </div>
